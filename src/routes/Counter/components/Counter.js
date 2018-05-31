@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import CounterDisplay from '../containers/CounterDisplayContainer'
 
 export const Counter = ({ counter, increment, doubleAsync }) => (
   <div style={{ margin: '0 auto' }} >
@@ -11,6 +12,7 @@ export const Counter = ({ counter, increment, doubleAsync }) => (
     <button className='btn btn-secondary' onClick={doubleAsync}>
       Double (Async)
     </button>
+    <div><CounterDisplay /></div>
   </div>
 )
 Counter.propTypes = {
